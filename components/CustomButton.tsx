@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Text, TouchableOpacity } from "react-native";
 import React from "react";
 
 const CustomButton = ({
@@ -10,7 +10,7 @@ const CustomButton = ({
 }: {
   title: any;
   handlePress: any;
-  containerStyles: any;
+  containerStyles?: any;
   textStyles?: any;
   isLoading?: any;
 }) => {
