@@ -11,7 +11,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "package": "com.peanut_butter.aora"
     },
     "android": {
       "adaptiveIcon": {
