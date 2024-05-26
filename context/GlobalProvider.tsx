@@ -2,7 +2,7 @@ import { getCurrentUser } from "@/lib/appwrite";
 import { createContext, useContext, useState, useEffect } from "react";
 import { Models } from "react-native-appwrite";
 
-interface ContextType {
+interface Context {
   isLoading: boolean;
   isLoggedIn: boolean;
   user: Models.Document | null;
@@ -10,7 +10,7 @@ interface ContextType {
   setUser: React.Dispatch<React.SetStateAction<Models.Document | null>>
 }
 
-const GlobalContext = createContext<ContextType>({
+const GlobalContext = createContext<Context>({
   isLoading: true,
   isLoggedIn: false,
   user: null,
